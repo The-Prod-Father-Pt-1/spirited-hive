@@ -156,3 +156,119 @@ Translations stored in `locales/*.json` files with nested key structure.
 - Breadcrumbs (optional)
 - Animations (optional, with Ken Burns effect)
 - Product recommendations in cart
+
+---
+
+## Project Workflow & Standards
+
+### Time Tracking (REQUIRED)
+
+**Client:** Spirited Hive requires accurate time tracking for all work.
+
+**Location:** `time-spent/time-log.md`
+
+**Process:**
+1. **Clock in** when starting work - add new entry with start time
+2. **Clock out** when stopping work - add end time and calculate minutes
+3. **Be honest** - no fudging numbers, no overshooting
+4. Track actual work time, not time away from keyboard
+5. Include brief description of work done
+
+**Format:**
+```
+YYYY-MM-DD | HH:MM - HH:MM | XXX min | Brief description
+```
+
+**Important:** This file is tracked in git and syncs across computers for consistent logging.
+
+### Meeting Documentation
+
+**Location:** `docs/YYYY-MM-DD-meeting-name/`
+
+**Required Files:**
+- `meeting-notes.md` - Structured notes from meeting
+- `transcript.md` - Full transcript (if available)
+- `video.mp4` - Recording of meeting
+- `action-items.md` - Extracted action items with assignments
+
+**Process:**
+1. After each client meeting, create dated folder
+2. Add video, transcript, and initial notes
+3. Process materials to identify requirements
+4. Extract clear action items with team assignments
+5. Review action items align with project standards
+
+**Templates:** Use templates in `docs/_templates/` for consistency
+
+### Team Structure
+
+This project uses a specialized Shopify development team:
+
+- **Product Manager** - Requirements gathering, prioritization, client communication
+- **Designer** - UI/UX design, maintaining brand consistency
+- **Frontend Engineer** - Implementation, component development
+- **Shopify Architect** - Theme architecture, Shopify best practices, admin configuration
+
+### Quality Standards (NON-NEGOTIABLE)
+
+1. **Never cut corners** - Quality over speed, but build efficiently
+2. **Dual configurability** - Everything must be adjustable from:
+   - Claude Code / codebase
+   - Shopify admin (for non-technical users)
+3. **Brand consistency** - Always maintain:
+   - Existing fonts
+   - Color schemes
+   - Design patterns
+   - Never go off-rails with styling
+4. **Complete features** - Don't mark as done until:
+   - Fully functional
+   - Tested thoroughly
+   - Documented in code
+   - Configurable from admin
+5. **Shopify best practices** - Follow official guidelines for:
+   - Performance
+   - Accessibility
+   - Mobile responsiveness
+   - SEO
+
+### Section Development Standards
+
+When creating or modifying sections:
+
+1. **Schema settings** - Always expose relevant controls in section schema
+2. **Block flexibility** - Use blocks for repeatable content
+3. **Color scheme support** - Support all four theme color schemes
+4. **Responsive design** - Test mobile, tablet, desktop
+5. **Admin preview** - Ensure section editor shows accurate preview
+6. **Default values** - Provide sensible defaults in schema
+7. **Documentation** - Comment complex logic in Liquid
+
+### Before Pushing Code
+
+Checklist for every commit:
+- [ ] Code is fully functional
+- [ ] Settings exposed in Shopify admin where appropriate
+- [ ] Tested on mobile and desktop
+- [ ] Follows existing code patterns
+- [ ] Maintains brand consistency (fonts, colors)
+- [ ] No console errors
+- [ ] Git commit message is descriptive
+- [ ] Time log updated with work done
+
+### Shopify CLI Integration
+
+The project is connected to the Spirited Hive Shopify store.
+
+**Development workflow:**
+```bash
+# Start local development with live preview
+shopify theme dev
+
+# Push changes to theme
+shopify theme push
+
+# Pull latest from store
+shopify theme pull
+```
+
+**Important:** Always test in development theme before pushing to live store.
