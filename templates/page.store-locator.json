@@ -1,0 +1,115 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_html_cQVfiX": {
+      "type": "custom-html",
+      "blocks": {
+        "html_FtktFL": {
+          "type": "html",
+          "settings": {
+            "code": "<div id=\"storepoint-container\" data-map-id=\"1634d63b3805af\"></div>\n<script>(function(){var a=document.createElement(\"script\");a.type=\"text/javascript\";a.async=!0;a.src=\"https://cdn.storepoint.co/api/v1/js/1634d63b3805af.js\";var b=document.getElementsByTagName(\"script\")[0];b.parentNode.insertBefore(a,b);}());</script>",
+            "width": "100%",
+            "margin_bottom": 0
+          }
+        },
+        "html_fXYjjN": {
+          "type": "html",
+          "settings": {
+            "code": "",
+            "width": "100%",
+            "margin_bottom": 0
+          }
+        },
+        "html_bVrhTN": {
+          "type": "html",
+          "settings": {
+            "code": "",
+            "width": "100%",
+            "margin_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "html_FtktFL",
+        "html_fXYjjN",
+        "html_bVrhTN"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "Spirited Hive - Location Finder",
+        "description": "<p>Skip the wait, find hive at a location near you!</p>",
+        "section_width": "content",
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "colors": "white"
+      }
+    },
+    "scrolling_banner_LQxqRH": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "text_cGxrpH": {
+          "type": "text",
+          "settings": {
+            "text": "FIND HIVE NEAR YOU TODAY 🐝",
+            "font": "heading",
+            "style": "fill",
+            "font_size_desktop": 32,
+            "font_size_mobile": 28
+          }
+        },
+        "image_LjqRew": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "height_desktop": 60,
+            "height_mobile": 60,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_cGxrpH",
+        "image_LjqRew"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "show_fade": true,
+        "borders": false,
+        "animation_direction": "normal",
+        "animation_speed": 60,
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "space_between_blocks_desktop": 80,
+        "space_between_blocks_mobile": 20,
+        "rotate": "0",
+        "color_scheme": "white"
+      }
+    },
+    "main": {
+      "type": "template--page",
+      "custom_css": [
+        "body {display: flex !important; flex-direction: column; min-height: 100vh;}",
+        "#template-customers-login {flex: 1 0 auto;}",
+        ".footer.footer--classic {flex-shrink: 0;}"
+      ],
+      "settings": {
+        "page_title_enabled": false,
+        "page_width": "full-width"
+      }
+    }
+  },
+  "order": [
+    "custom_html_cQVfiX",
+    "scrolling_banner_LQxqRH",
+    "main"
+  ]
+}
