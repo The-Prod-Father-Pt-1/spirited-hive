@@ -201,7 +201,7 @@
           }
         },
         "text": {
-          "type": "text",
+          "type": "richtext",
           "settings": {
             "text": "<p>Serve chilled over ice, garnish with fresh cranberries and a sprig of rosemary for the perfect festive touch. Pairs wonderfully with holiday appetizers and desserts!</p>"
           }
