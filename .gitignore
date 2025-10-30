@@ -67,3 +67,4 @@ build/
 # and we want to KEEP these folders tracked:
 # - time-spent/ - Time tracking for client accountability
 # - docs/ - Meeting notes, transcripts, videos for team collaboration
+docs/**/video.mp4
