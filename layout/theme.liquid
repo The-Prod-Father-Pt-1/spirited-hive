@@ -14,6 +14,8 @@
   {{ 'photoswipe.min.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'theme.min.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+  {{ 'holiday-snow.css' | asset_url | stylesheet_tag }}
+  {{ 'holiday-lights.css' | asset_url | stylesheet_tag }}
 
   {% if settings.favicon != blank %}
     <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 180, height: 180, crop: 'center' }}" type="image/png">
@@ -46,6 +48,7 @@
   {% endif %}
 
   <!-- Helpers ================================================== -->
+  <!-- TESTING WORKFLOW: This proves local edits sync to Shopify! ✅ -->
   {% render 'social-meta-tags' %}
   <link rel="canonical" href="{{ canonical_url }}"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -143,6 +146,10 @@
   <a class="btn skip-to-content-link sr-only" href="#MainContent">
     {{ 'general.accessibility.skip_to_content' | t }}
   </a>
+
+  {% comment %} Holiday Effects {% endcomment %}
+  {% render 'holiday-snow' %}
+  {% render 'holiday-lights' %}
 
   <noscript>{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}</noscript>
   <noscript>{{ 'photoswipe.min.css' | asset_url | stylesheet_tag }}</noscript>

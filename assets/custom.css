@@ -1,1 +1,44 @@
 /* Place any CSS overrides in this file. */
+
+/* ========================================
+   HOLIDAY THEME - RED BACKGROUND
+   ======================================== */
+
+/* Apply red to body */
+body {
+  background-color: #DC143C !important; /* Crimson red */
+}
+
+/* Override ALL section backgrounds */
+.shopify-section,
+.shopify-section > div,
+.shopify-section .section,
+.section--padded,
+.image-with-text-slideshow,
+.collage-builder,
+.featured-collection,
+.accordion,
+.scrolling-banner,
+.text-adverts,
+.rich-text,
+.accordion-with-image,
+.animated-text,
+[class*="color-scheme"],
+[class*="section"] {
+  background-color: #DC143C !important;
+}
+
+/* Override specific color scheme classes */
+.color-scheme--white,
+.color-scheme--light,
+.color-scheme--default,
+.color-scheme--dark,
+.color-scheme--accent {
+  background-color: #DC143C !important;
+}
+
+/* Override inline styles */
+div[style*="background"],
+section[style*="background"] {
+  background-color: #DC143C !important;
+}

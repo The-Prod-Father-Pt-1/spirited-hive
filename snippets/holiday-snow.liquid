@@ -1,0 +1,10 @@
+{% comment %}
+  Holiday Snowfall Effect
+  Creates 50 falling snowflakes (20 on mobile for performance)
+{% endcomment %}
+
+<div class="holiday-snow-container">
+  {% for i in (1..50) %}
+    <div class="snowflake">❄</div>
+  {% endfor %}
+</div>
