@@ -16,6 +16,7 @@
   {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'holiday-snow.css' | asset_url | stylesheet_tag }}
   {{ 'holiday-lights.css' | asset_url | stylesheet_tag }}
+  {{ 'holiday-snow-mounds.css' | asset_url | stylesheet_tag }}
 
   {% if settings.favicon != blank %}
     <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 180, height: 180, crop: 'center' }}" type="image/png">
@@ -150,6 +151,7 @@
   {% comment %} Holiday Effects {% endcomment %}
   {% render 'holiday-snow' %}
   {% render 'holiday-lights' %}
+  {% render 'holiday-snow-mounds' %}
 
   <noscript>{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}</noscript>
   <noscript>{{ 'photoswipe.min.css' | asset_url | stylesheet_tag }}</noscript>

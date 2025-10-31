@@ -272,3 +272,171 @@ shopify theme pull
 ```
 
 **Important:** Always test in development theme before pushing to live store.
+
+---
+
+## Development Environment Setup
+
+This section documents how to set up your local development environment to work on the "Hive for the Holidays" preview theme (NOT the live production theme).
+
+### Initial Setup (One-Time)
+
+**Prerequisites:**
+- Shopify CLI installed (`brew install shopify-cli` on macOS)
+- Git configured with GitHub access
+- Shopify partner account with access to spirited-hive.myshopify.com
+
+**Step 1: Clone Repository**
+```bash
+# Clone from GitHub
+git clone https://github.com/[your-username]/spirited-hive.git
+cd spirited-hive
+```
+
+**Step 2: Authenticate with Shopify**
+```bash
+# Log in to Shopify store
+shopify auth login
+
+# Follow prompts to authenticate with spirited-hive.myshopify.com
+```
+
+**Step 3: Verify Theme Connection**
+```bash
+# List available themes on the store
+shopify theme list
+
+# You should see:
+# - Live theme (e.g., "Flow #123456789")
+# - Hive for the Holidays #153001951460 (preview/development theme)
+```
+
+### Daily Development Workflow
+
+**Step 1: Pull Latest from Preview Theme**
+```bash
+# Pull latest changes from "Hive for the Holidays" preview theme
+shopify theme pull --theme="Hive for the Holidays"
+
+# This ensures you have the latest version as source of truth
+```
+
+**Step 2: Pull Latest from GitHub**
+```bash
+# Ensure you have latest commits from team
+git pull origin main
+```
+
+**Step 3: Start Local Development Server**
+```bash
+# Start dev server connected to preview theme
+shopify theme dev --theme="Hive for the Holidays"
+
+# This will output a local URL like:
+# http://127.0.0.1:9292
+#
+# This local server shows real-time changes as you edit files
+```
+
+**Step 4: Make Changes**
+- Edit files locally in your code editor
+- Changes auto-sync to local dev server
+- View changes instantly at http://127.0.0.1:9292
+- Preview theme URL: https://spirited-hive.myshopify.com?preview_theme_id=153001951460
+
+**Step 5: Push to Preview Theme**
+```bash
+# Push changes to "Hive for the Holidays" preview theme
+shopify theme push --theme="Hive for the Holidays"
+
+# Or push specific files:
+shopify theme push --theme="Hive for the Holidays" --only=assets/custom.css --only=snippets/holiday-snow-mounds.liquid
+```
+
+**Step 6: Commit and Push to GitHub**
+```bash
+# Stage changes
+git add .
+
+# Commit with descriptive message
+git commit -m "Add snow mounds with Christmas decorations"
+
+# Push to GitHub
+git push origin main
+```
+
+### Important Notes
+
+**Theme Safety:**
+- **"Hive for the Holidays" (#153001951460)** is the PREVIEW/DEVELOPMENT theme
+- This is NOT the live production theme
+- Changes to this theme do NOT affect live customers
+- Safe to experiment and iterate
+
+**Preview Access:**
+- Preview URL: https://spirited-hive.myshopify.com?preview_theme_id=153001951460
+- Only visible to logged-in staff members
+- Shows your work-in-progress changes
+
+**Source of Truth:**
+- **Primary:** "Hive for the Holidays" theme in Shopify (preview mode)
+- **Secondary:** GitHub repository (for version control)
+- Always pull from Shopify theme before starting work
+- Always push to both Shopify and GitHub when done
+
+**Switching Computers:**
+- Clone repo on new computer
+- Run `shopify auth login` to authenticate
+- Run `shopify theme pull --theme="Hive for the Holidays"` to sync
+- Start development with `shopify theme dev --theme="Hive for the Holidays"`
+
+### Troubleshooting
+
+**"Theme not found" error:**
+```bash
+# List all themes to verify name
+shopify theme list
+
+# Use exact name from list
+shopify theme dev --theme="Hive for the Holidays"
+```
+
+**Authentication issues:**
+```bash
+# Re-authenticate
+shopify auth logout
+shopify auth login
+```
+
+**Sync conflicts:**
+```bash
+# Pull latest from Shopify (overwrites local)
+shopify theme pull --theme="Hive for the Holidays"
+
+# Or push local changes (overwrites Shopify)
+shopify theme push --theme="Hive for the Holidays"
+```
+
+**Local dev server not updating:**
+- Stop dev server (Ctrl+C)
+- Restart: `shopify theme dev --theme="Hive for the Holidays"`
+- Hard refresh browser (Cmd+Shift+R on Mac)
+
+### Quick Reference Commands
+
+```bash
+# Pull latest from preview theme
+shopify theme pull --theme="Hive for the Holidays"
+
+# Start local dev server
+shopify theme dev --theme="Hive for the Holidays"
+
+# Push all changes to preview theme
+shopify theme push --theme="Hive for the Holidays"
+
+# Push specific files
+shopify theme push --theme="Hive for the Holidays" --only=assets/custom.css
+
+# Commit and push to GitHub
+git add . && git commit -m "Description" && git push origin main
+```

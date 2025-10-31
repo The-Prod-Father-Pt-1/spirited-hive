@@ -1,0 +1,544 @@
+{% comment %}
+  Holiday Fake Reviews Section
+  Animated scrolling carousel with festive character reviews
+{% endcomment %}
+
+<div class="holiday-fake-reviews section--padded" data-section-id="{{ section.id }}" data-section-type="holiday-fake-reviews">
+  <div class="reviews-wrapper">
+    {% if section.settings.title != blank %}
+      <h2 class="section-title">{{ section.settings.title }}</h2>
+    {% endif %}
+
+    {% if section.settings.subtitle != blank %}
+      <p class="section-subtitle">{{ section.settings.subtitle }}</p>
+    {% endif %}
+
+    <!-- Top Row - Scrolls Left (Odd-indexed reviews) -->
+    <div class="reviews-track-wrapper">
+      <div class="reviews-track scroll-left">
+        {% for block in section.blocks %}
+          {% assign index_mod = forloop.index | modulo: 2 %}
+          {% if index_mod == 1 %}
+            {% render 'holiday-review-card', block: block %}
+          {% endif %}
+        {% endfor %}
+        <!-- Duplicate for seamless loop -->
+        {% for block in section.blocks %}
+          {% assign index_mod = forloop.index | modulo: 2 %}
+          {% if index_mod == 1 %}
+            {% render 'holiday-review-card', block: block %}
+          {% endif %}
+        {% endfor %}
+        <!-- Extra duplicate to ensure no gaps -->
+        {% for block in section.blocks %}
+          {% assign index_mod = forloop.index | modulo: 2 %}
+          {% if index_mod == 1 %}
+            {% render 'holiday-review-card', block: block %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Bottom Row - Scrolls Right (Even-indexed reviews) -->
+    <div class="reviews-track-wrapper">
+      <div class="reviews-track scroll-right">
+        {% for block in section.blocks %}
+          {% assign index_mod = forloop.index | modulo: 2 %}
+          {% if index_mod == 0 %}
+            {% render 'holiday-review-card', block: block %}
+          {% endif %}
+        {% endfor %}
+        <!-- Duplicate for seamless loop -->
+        {% for block in section.blocks %}
+          {% assign index_mod = forloop.index | modulo: 2 %}
+          {% if index_mod == 0 %}
+            {% render 'holiday-review-card', block: block %}
+          {% endif %}
+        {% endfor %}
+        <!-- Extra duplicate to ensure no gaps -->
+        {% for block in section.blocks %}
+          {% assign index_mod = forloop.index | modulo: 2 %}
+          {% if index_mod == 0 %}
+            {% render 'holiday-review-card', block: block %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.holiday-fake-reviews {
+  background-color: #DC143C !important;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.reviews-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.holiday-fake-reviews .section-title {
+  text-align: center;
+  color: #ffffff !important;
+  font-size: 42px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 800;
+}
+
+.holiday-fake-reviews .section-subtitle {
+  text-align: center;
+  color: #ffffff !important;
+  font-size: 20px;
+  margin-bottom: 50px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.reviews-track-wrapper {
+  margin-bottom: 25px;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 25px;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+.scroll-left {
+  animation: scroll-left 60s linear infinite;
+}
+
+.scroll-right {
+  animation: scroll-right 60s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(calc(-100% / 3));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fake-review-card {
+  background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(242, 189, 53, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 400px;
+  max-width: 400px;
+  flex-shrink: 0;
+  border: 3px solid #F2BD35;
+}
+
+.fake-review-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(242, 189, 53, 0.6);
+  animation-play-state: paused;
+}
+
+.review-header {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.character-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #F2BD35;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.character-avatar-placeholder {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #F2BD35 0%, #E68819 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  border: 4px solid #F2BD35;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.review-meta {
+  flex: 1;
+}
+
+.character-name {
+  color: #ffffff !important;
+  font-size: 22px;
+  margin: 0 0 8px 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.review-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.review-stars .star {
+  color: #F2BD35 !important;
+  font-size: 22px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 0 8px rgba(242, 189, 53, 0.8));
+}
+
+.character-location {
+  color: #E8F5E9 !important;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+.review-content {
+  margin-bottom: 18px;
+}
+
+.review-text {
+  color: #ffffff !important;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  font-style: italic;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.review-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #F2BD35 0%, #E68819 100%);
+  color: #1a1a1a !important;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 800;
+  border: 2px solid #E68819;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.review-badge svg {
+  flex-shrink: 0;
+  color: #1a1a1a;
+  stroke-width: 2.5px;
+}
+
+/* Mobile: Single scrolling row */
+@media (max-width: 768px) {
+  .holiday-fake-reviews .section-title {
+    font-size: 32px;
+  }
+
+  .holiday-fake-reviews {
+    padding: 40px 0;
+  }
+
+  .fake-review-card {
+    min-width: 320px;
+    max-width: 320px;
+    padding: 22px;
+  }
+
+  .character-avatar,
+  .character-avatar-placeholder {
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
+  }
+
+  .character-name {
+    font-size: 18px;
+  }
+
+  .review-text {
+    font-size: 14px;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Holiday Fake Reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "What The North Pole Is Saying"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Reviews from our favorite holiday characters"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Holiday Review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "character_name",
+          "label": "Character Name",
+          "default": "Santa Claus"
+        },
+        {
+          "type": "image_picker",
+          "id": "character_image",
+          "label": "Character Image (optional)"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Location",
+          "default": "North Pole"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Star Rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "review_text",
+          "label": "Review Text",
+          "default": "This is the best honey-sweetened cocktail I've ever had!"
+        },
+        {
+          "type": "checkbox",
+          "id": "verified",
+          "label": "Show Verified Badge",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Holiday Fake Reviews",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Santa Claus",
+            "location": "North Pole",
+            "rating": 5,
+            "review_text": "Ho ho ho! After a long night of deliveries, nothing beats a Spirited Hive Cranberry Vodka. The honey sweetness reminds me of Mrs. Claus's cookies. Five stars! 🎅",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Rudolph",
+            "location": "Santa's Stable",
+            "rating": 5,
+            "review_text": "My nose might be red, but it's got nothing on this delicious Cranberry Vodka! Perfect after guiding the sleigh through that blizzard. The lime really makes it pop! 🦌",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Buddy the Elf",
+            "location": "NYC",
+            "rating": 5,
+            "review_text": "SANTA! I KNOW HIM! And I know good cocktails! This is the BEST! The honey makes it sweet like syrup on spaghetti! I put it in my coffee too! 🎄",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "The Grinch",
+            "location": "Mount Crumpit",
+            "rating": 1,
+            "review_text": "Bah humbug! Another overpriced holiday gimmick. The Whos down in Whoville probably love this saccharine garbage. My dog Max won't even touch it. One star. 💢",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "The Grinch",
+            "location": "Mount Crumpit",
+            "rating": 5,
+            "review_text": "Fine. I'll admit it. This cocktail might have made my shriveled heart grow three sizes. The Cranberry Vodka is... surprisingly delightful. Damn you, Spirited Hive. 💚",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Herbie",
+            "location": "North Pole Dental Office",
+            "rating": 5,
+            "review_text": "As a dentist, I'm thrilled to recommend Spirited Hive! Sweetened with real honey - no processed sugar damaging your enamel. I serve these at my practice! Even Bumble loves 'em! 🦷",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Frosty",
+            "location": "Wherever There's Snow",
+            "rating": 5,
+            "review_text": "Believe in the magic, kids! And believe in this cocktail! Keeps me cool even when that darn sun comes out. The cranberry is pure magic in a can! ☃️",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Jack Frost",
+            "location": "Everywhere Cold",
+            "rating": 5,
+            "review_text": "Nipping at your nose? Try nipping at this cocktail instead! Frostbitten delicious with that honey-lime combo. I'm leaving this under every Christmas tree I frost. ❄️",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Mrs. Claus",
+            "location": "North Pole Kitchen",
+            "rating": 5,
+            "review_text": "After baking 10,000 cookies for the elves, I deserve a treat! This Cranberry Vodka pairs beautifully with my gingerbread. Santa's been sneaking sips when he thinks I'm not looking! 🍪",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Ebenezer Scrooge",
+            "location": "London Counting House",
+            "rating": 3,
+            "review_text": "Wasteful indulgence! Three shillings for a cocktail? Preposterous! Though... I suppose the honey does have a certain... fiscal responsibility to it. Fine. Three stars. Bah! 💷",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Elf on the Shelf",
+            "location": "Your Living Room (I'm Watching)",
+            "rating": 5,
+            "review_text": "I've been watching you all year, and I've been watching this cocktail too. Reports to Santa: EXCELLENT. The cranberry-lime combo is on the Nice List. You should be too. 👀",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Yukon Cornelius",
+            "location": "Somewhere in the Yukon",
+            "rating": 5,
+            "review_text": "WAHOOO! Nothing like a Spirited Hive after a long day of prospecting! Tastes better than silver and gold combined! Even my sled dogs are jealous! Now where's that peppermint mine? ⛏️",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Bumble the Abominable Snowman",
+            "location": "Island of Misfit Toys",
+            "rating": 5,
+            "review_text": "RAWR! *translated* After Herbie fixed my teeth, I can finally enjoy the finer things! This Cranberry Vodka is delicious! Much better than eating people! Highly recommend! 🦷",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Cindy Lou Who",
+            "location": "Whoville",
+            "rating": 5,
+            "review_text": "Santa? Is that you? No? Well, whoever made this must be on the Nice List! It's so sweet and yummy! The Grinch said it made his heart grow! Can I have another? 🎀",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Kevin McCallister",
+            "location": "Home Alone (Chicago)",
+            "rating": 5,
+            "review_text": "When the wet bandits broke in, I set up booby traps AND had these waiting! The cranberry vodka was the perfect distraction. They never saw the paint cans coming! Merry Christmas ya filthy animal! 🏠",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "The Nutcracker",
+            "location": "The Kingdom of Sweets",
+            "rating": 5,
+            "review_text": "A most refined and elegant libation! The honey sweetness dances on the palate like the Sugar Plum Fairy herself. I decree this the official cocktail of the Kingdom! 🥜",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Krampus",
+            "location": "The Dark Forest",
+            "rating": 4,
+            "review_text": "For naughty children, I bring punishment. For myself? Spirited Hive. The cranberry reminds me of... well, never mind. Good stuff. Would be 5 stars but not scary enough. 😈",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "character_name": "Jacob Marley's Ghost",
+            "location": "Beyond the Grave",
+            "rating": 5,
+            "review_text": "I am here to warn you... that this cocktail is AMAZING! If only I'd enjoyed Spirited Hive in life instead of counting coins! Learn from my mistakes! Drink responsibly! OooOOooo! 👻",
+            "verified": true
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

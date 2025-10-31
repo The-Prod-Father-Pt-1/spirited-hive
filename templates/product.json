@@ -1,1 +1,654 @@
-{"sections":{"product-form":{"type":"template--product","blocks":{"loox_reviews_loox_rating_UyRBx9":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","disabled":true,"settings":{"contentSize":16,"pattern":"","hideText":false,"alignment":"left","layout":"","textColor":"","starColor":"","showAllReviews":false,"looxOpenFloatingWidget":false,"emptyRatingWidget":false}},"text_with_icon_qb7JVq":{"type":"text-with-icon","settings":{"icon":"star","text":"All Spirited Hive Drinks are 7% ABV","link":"","margin_bottom":10,"text_color":"#242424"}},"title":{"type":"title","settings":{"title_font":"h2","margin_bottom":0}},"star_rating_Xzpi9G":{"type":"star_rating","settings":{"show_rating_as":"count","star_size":16,"show_product_rating_if_no_reviews":false,"no_reviews_label":"No reviews","margin_bottom":5}},"price":{"type":"price","settings":{"price_font":"h3","shipping_policy":false,"tax_included":false,"margin_bottom":20}},"a55b9011-1b1a-4353-9d97-7bdcd60949f2":{"type":"product-description","settings":{"collapsible_tab":true,"icon":"none","heading":"About {{ product.title }}","open_close_icon":"plus_minus","open_by_default":true,"margin_bottom":0}},"f0f0e917-92a5-4957-a68e-2d0bb38d7819":{"type":"separator","settings":{"margin_bottom":15}},"2f3ddc8d-6514-403d-a884-88c9a0294300":{"type":"stock-level-indicator","disabled":true,"settings":{"stock-range":20,"stock-level-notice":"always","show-stock-count":false,"in-stock-message":"Ready to ship","low-stock-message":"Selling fast!","out-of-stock-message":"Back in stock soon","preorder-message":"Preorder today","stock-level-indicator-style":"classic","bar-indicator-color":"standard","stock_indicator_animation":true,"margin_bottom":8}},"a7717974-ed85-4cde-80ef-4751178acf57":{"type":"text-with-icon","disabled":true,"settings":{"icon":"truck","text":"Worldwide shipping available","link":"","margin_bottom":8,"text_color":"#242424"}},"separator_j9tcaD":{"type":"separator","disabled":true,"settings":{"margin_bottom":30}},"options":{"type":"options","settings":{"variant_style":"swatches","hide_out_of_stock_variants":false,"thumbnail_changes_variant":false,"size_guide_label":"Size guide","size_guide_page":"","size_option_name":"Size","margin_bottom":30}},"appstle_subscription_appstle_subscription_product_page_widget_n8xwHh":{"type":"shopify:\/\/apps\/appstle-subscription\/blocks\/appstle-subscription-product-page-widget\/fe257d39-6f88-4f35-ab08-bd437e3aa94e","settings":{}},"quantity":{"type":"quantity","settings":{"margin_bottom":30}},"buy_buttons":{"type":"buy_buttons","settings":{"show_smart_checkout":true,"enable_gift_card_recipient_form":true,"margin_bottom":30,"override_button_colors":false,"button_background_color":"#e68819","button_text_color":"#ffffff"}},"b0c19132-8e54-4664-b8ce-0a8c7f1f7737":{"type":"collapsible-tab","settings":{"heading":"Ingredients","open_close_icon":"caret","open_by_default":false,"icon":"none","text":"<p>{{ product.metafields.custom.nutrition_ingredients | metafield_tag }}<\/p>","page":"","margin_bottom":0}},"9c341458-2d2c-4317-a2cc-346e220f53e0":{"type":"collapsible-tab","settings":{"heading":"Nutrition Facts","open_close_icon":"caret","open_by_default":false,"icon":"none","text":"<p>{{ product.metafields.custom.supplement_facts | metafield_tag }}<\/p>","page":"","margin_bottom":0}}},"block_order":["loox_reviews_loox_rating_UyRBx9","text_with_icon_qb7JVq","title","star_rating_Xzpi9G","price","a55b9011-1b1a-4353-9d97-7bdcd60949f2","f0f0e917-92a5-4957-a68e-2d0bb38d7819","2f3ddc8d-6514-403d-a884-88c9a0294300","a7717974-ed85-4cde-80ef-4751178acf57","separator_j9tcaD","options","appstle_subscription_appstle_subscription_product_page_widget_n8xwHh","quantity","buy_buttons","b0c19132-8e54-4664-b8ce-0a8c7f1f7737","9c341458-2d2c-4317-a2cc-346e220f53e0"],"settings":{"enable_sticky":true,"media_position":"left","image_size":"medium","image_shape":"square","image-display":"thumbnails","thumbnail_position":"below","image_display_mobile":"slider","enable_video_loop":true,"enable_autoplay":true,"show_video_controls":false,"app_margin_bottom":20}},"text_adverts_637L9g":{"type":"text-adverts","blocks":{"text_QXM4xW":{"type":"text","settings":{"heading":"EXCLUSIVELY MADE WITH PREMIUM SPIRITS","subheading":"","link":""}},"text_KqJNjF":{"type":"text","settings":{"heading":"OUTSTANDING ALL-NATURAL FLAVOR","subheading":"","link":""}},"text_W3RAgc":{"type":"text","settings":{"heading":"100% SWEETENED WITH HONEY","subheading":"","link":""}}},"block_order":["text_QXM4xW","text_KqJNjF","text_W3RAgc"],"settings":{"section_padding_top":0,"section_padding_bottom":0,"colors":"dark"}},"rich_text_aXxeqR":{"type":"rich-text","blocks":{"heading_4W8gdL":{"type":"heading","settings":{"heading":"THE DETAILS","heading--text-size":30,"heading_bottom_spacing":0}}},"block_order":["heading_4W8gdL"],"settings":{"section_width":"narrow","text_alignment_desktop":"left","text_alignment_mobile":"left","section_padding_top":30,"section_padding_bottom":10,"colors":"white"}},"accordion_with_image_M4pb4c":{"type":"accordion-with-image","blocks":{"accordion_rggJaM":{"type":"accordion","settings":{"accordion_header":"What is the ABV of Spirited Hive cocktails?","open_by_default":false,"text":"<p>Spirited Hive cocktails are <strong>7% ABV<\/strong>, giving you the perfect balance of strength and smoothness. Crafted with real spirits, they’re designed for a flavorful, elevated drinking experience.<\/p>","page":""}},"accordion_wWgBeK":{"type":"accordion","settings":{"accordion_header":"Are Spirited Hive cocktails all-natural?","open_by_default":false,"text":"<p>Yes! We only use<strong> natural and organic ingredients<\/strong> in every can. Our cocktails are<strong>100% sweetened with organic wildflower honey<\/strong>, with no artificial flavors, synthetic sweeteners, or preservatives—just clean, real ingredients. <\/p>","page":""}},"accordion_bTyLAG":{"type":"accordion","settings":{"accordion_header":"Why do you use organic wildflower honey?","open_by_default":false,"text":"<p>We use <strong>100% organic wildflower honey <\/strong>because we believe in real, high-quality ingredients—and because it’s our founder Jack’s favorite type of honey. Wildflower honey offers a naturally rich, complex flavor that enhances our cocktails, making them smooth, balanced, and uniquely delicious.<\/p>","page":""}},"accordion_h6A9XF":{"type":"accordion","settings":{"accordion_header":"What makes Spirited Hive different?","open_by_default":false,"text":"<p>Spirited Hive is <strong>all-natural and sweetened with organic honey<\/strong>, setting us apart from other canned cocktails that rely on synthetic sweeteners and artificial ingredients. We believe in <strong>better-for-you<\/strong> drinks that don’t compromise on taste, so you can sip with confidence.<\/p>","page":""}}},"block_order":["accordion_rggJaM","accordion_wWgBeK","accordion_bTyLAG","accordion_h6A9XF"],"settings":{"section_title":"","section_description":"","faq_icon":"plus_minus","accordion_image":"shopify:\/\/shop_images\/Artboard_1_d00dccfa-a030-47ff-9878-cf30cdc30282.png","title":"","text":"","link":"","button_text":"","image_position_desktop":"right","image_position_mobile":"top","section_width":"narrow","section_padding_top":10,"section_padding_bottom":60,"image--background-color":"rgba(0,0,0,0)","image--text-color":"#333333","button_background_color":"#242424","button_text_color":"#ffffff","colors":"light"}},"animated_text_9ijjLw":{"type":"animated-text","blocks":{"text_static_NhkyLN":{"type":"text_static","settings":{"text_static":"<p>BETTER-FOR-YOU<\/p>","max_width_desktop":100,"max_width_mobile":100,"text_color":"rgba(0,0,0,0)"}},"text_dynamic_YnMXVR":{"type":"text_dynamic","settings":{"text_dynamic":"canned cocktail,in every way","animation_timing":500,"rotation_interval":5000,"text_color":"rgba(0,0,0,0)"}},"text_static_8NALdT":{"type":"text_static","disabled":true,"settings":{"text_static":"<p>your product is.<\/p>","max_width_desktop":100,"max_width_mobile":100,"text_color":"rgba(0,0,0,0)"}},"button_CF4x8A":{"type":"button","disabled":true,"settings":{"button_url":"","button_text":"Shop now","buttons_style":"filled","override_button_colors":false,"color_button_background":"#e68819","color_button_text":"#ffffff"}}},"block_order":["text_static_NhkyLN","text_dynamic_YnMXVR","text_static_8NALdT","button_CF4x8A"],"custom_css":[],"settings":{"image_desktop":"shopify:\/\/shop_images\/Spirited_Hive_-_RTD_-_Core_carton_web.png","height_desktop":"s","text_position_desktop":"center","text_size_desktop":60,"height_mobile":"m","text_position_mobile":"left","text_size_mobile":22,"section_margin_top":0,"section_margin_bottom":0,"colors":"accent"}},"product-description":{"type":"template--product--description","blocks":{"product-description":{"type":"product_description","settings":{"collapsible_tab":true,"title":"Description","open_by_default":false}},"collapsible-tab-1":{"type":"collapsible_tab","settings":{"title":"Product details","open_by_default":false,"text":"<p>Share some information about your product<\/p>","page":""}},"collapsible-tab-2":{"type":"collapsible_tab","settings":{"title":"Product details","open_by_default":false,"text":"<p>Share some information about your product<\/p>","page":""}}},"block_order":["product-description","collapsible-tab-1","collapsible-tab-2"],"disabled":true,"settings":{"open_close_icon":"plus_minus","section_width":"content","section_padding_top":60,"section_padding_bottom":60,"colors":"white","enable_readmore":false}},"image_with_text_overlay_Y3Y9AG":{"type":"image-with-text-overlay","blocks":{"heading_RXLJL3":{"type":"heading","settings":{"title":"Image with text overlay","font_size_desktop":28,"font_size_mobile":28,"heading_bottom_spacing":25}},"text_DpX8dt":{"type":"text","settings":{"text":"<p>Add an image paired with text to give focus to your chosen product, collection, or blog post.<\/p>","font_size_desktop":16,"font_size_mobile":16,"text_bottom_spacing":20}}},"block_order":["heading_RXLJL3","text_DpX8dt"],"disabled":true,"settings":{"height_desktop":"original","text_position_desktop":"center","text_alignment_desktop":"center","caption_width_desktop":50,"height_mobile":"original","text_position_mobile":"center","text_alignment_mobile":"center","section_link":"","animation_style":"none","section_margin_top":0,"section_margin_bottom":0,"text_color":"#ffffff","caption_bg_color":"rgba(0,0,0,0)","image_overlay_color":"#242424","image_overlay_opacity":0}},"product-recommendations":{"type":"template--product--recommendations","settings":{"title":"YOU'LL ALSO LOVE THESE...","description":"","layout_style":"slider","products_to_show":6,"grid-desktop":3,"grid-mobile":"2","section_padding_top":60,"section_padding_bottom":60,"colors":"light","override_button_colors":false,"button_background_color":"#f2bd35","button_text_color":"#ffffff"}},"174093866105199c67":{"type":"apps","blocks":{"loox_reviews_loox_dynamic_section_EgUG4m":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"only_photos":false,"aggregated":false,"limit":20,"hide_thumbnails":false,"maxwidth":1920,"is_sample":true}}},"block_order":["loox_reviews_loox_dynamic_section_EgUG4m"],"settings":{"section_padding_top":0,"section_padding_bottom":0,"include_margins":true}}},"order":["product-form","text_adverts_637L9g","rich_text_aXxeqR","accordion_with_image_M4pb4c","animated_text_9ijjLw","product-description","image_with_text_overlay_Y3Y9AG","product-recommendations","174093866105199c67"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product-form": {
+      "type": "template--product",
+      "blocks": {
+        "loox_reviews_loox_rating_UyRBx9": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "left",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "text_with_icon_qb7JVq": {
+          "type": "text-with-icon",
+          "settings": {
+            "icon": "star",
+            "text": "All Spirited Hive Drinks are 7% ABV",
+            "link": "",
+            "margin_bottom": 10,
+            "text_color": "#242424"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_font": "h2",
+            "margin_bottom": 0
+          }
+        },
+        "star_rating_Xzpi9G": {
+          "type": "star_rating",
+          "settings": {
+            "show_rating_as": "count",
+            "star_size": 16,
+            "show_product_rating_if_no_reviews": false,
+            "no_reviews_label": "No reviews",
+            "margin_bottom": 5
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_font": "h3",
+            "shipping_policy": false,
+            "tax_included": false,
+            "margin_bottom": 20
+          }
+        },
+        "a55b9011-1b1a-4353-9d97-7bdcd60949f2": {
+          "type": "product-description",
+          "settings": {
+            "collapsible_tab": true,
+            "icon": "none",
+            "heading": "About {{ product.title }}",
+            "open_close_icon": "plus_minus",
+            "open_by_default": true,
+            "margin_bottom": 0
+          }
+        },
+        "f0f0e917-92a5-4957-a68e-2d0bb38d7819": {
+          "type": "separator",
+          "settings": {
+            "margin_bottom": 15
+          }
+        },
+        "2f3ddc8d-6514-403d-a884-88c9a0294300": {
+          "type": "stock-level-indicator",
+          "disabled": true,
+          "settings": {
+            "stock-range": 20,
+            "stock-level-notice": "always",
+            "show-stock-count": false,
+            "in-stock-message": "Ready to ship",
+            "low-stock-message": "Selling fast!",
+            "out-of-stock-message": "Back in stock soon",
+            "preorder-message": "Preorder today",
+            "stock-level-indicator-style": "classic",
+            "bar-indicator-color": "standard",
+            "stock_indicator_animation": true,
+            "margin_bottom": 8
+          }
+        },
+        "a7717974-ed85-4cde-80ef-4751178acf57": {
+          "type": "text-with-icon",
+          "disabled": true,
+          "settings": {
+            "icon": "truck",
+            "text": "Worldwide shipping available",
+            "link": "",
+            "margin_bottom": 8,
+            "text_color": "#242424"
+          }
+        },
+        "separator_j9tcaD": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {
+            "margin_bottom": 30
+          }
+        },
+        "options": {
+          "type": "options",
+          "settings": {
+            "variant_style": "swatches",
+            "hide_out_of_stock_variants": false,
+            "thumbnail_changes_variant": false,
+            "size_guide_label": "Size guide",
+            "size_guide_page": "",
+            "size_option_name": "Size",
+            "margin_bottom": 30
+          }
+        },
+        "appstle_subscription_appstle_subscription_product_page_widget_n8xwHh": {
+          "type": "shopify://apps/appstle-subscription/blocks/appstle-subscription-product-page-widget/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
+          "settings": {}
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {
+            "margin_bottom": 30
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_smart_checkout": true,
+            "enable_gift_card_recipient_form": true,
+            "margin_bottom": 30,
+            "override_button_colors": false,
+            "button_background_color": "#e68819",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "b0c19132-8e54-4664-b8ce-0a8c7f1f7737": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "Ingredients",
+            "open_close_icon": "caret",
+            "open_by_default": false,
+            "icon": "none",
+            "text": "<p>{{ product.metafields.custom.nutrition_ingredients | metafield_tag }}</p>",
+            "page": "",
+            "margin_bottom": 0
+          }
+        },
+        "9c341458-2d2c-4317-a2cc-346e220f53e0": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "Nutrition Facts",
+            "open_close_icon": "caret",
+            "open_by_default": false,
+            "icon": "none",
+            "text": "<p>{{ product.metafields.custom.supplement_facts | metafield_tag }}</p>",
+            "page": "",
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_rating_UyRBx9",
+        "text_with_icon_qb7JVq",
+        "title",
+        "star_rating_Xzpi9G",
+        "price",
+        "a55b9011-1b1a-4353-9d97-7bdcd60949f2",
+        "f0f0e917-92a5-4957-a68e-2d0bb38d7819",
+        "2f3ddc8d-6514-403d-a884-88c9a0294300",
+        "a7717974-ed85-4cde-80ef-4751178acf57",
+        "separator_j9tcaD",
+        "options",
+        "appstle_subscription_appstle_subscription_product_page_widget_n8xwHh",
+        "quantity",
+        "buy_buttons",
+        "b0c19132-8e54-4664-b8ce-0a8c7f1f7737",
+        "9c341458-2d2c-4317-a2cc-346e220f53e0"
+      ],
+      "settings": {
+        "enable_sticky": true,
+        "media_position": "left",
+        "image_size": "medium",
+        "image_shape": "square",
+        "image-display": "thumbnails",
+        "thumbnail_position": "below",
+        "image_display_mobile": "slider",
+        "enable_video_loop": true,
+        "enable_autoplay": true,
+        "show_video_controls": false,
+        "app_margin_bottom": 20
+      }
+    },
+    "text_adverts_637L9g": {
+      "type": "text-adverts",
+      "blocks": {
+        "text_QXM4xW": {
+          "type": "text",
+          "settings": {
+            "heading": "EXCLUSIVELY MADE WITH PREMIUM SPIRITS",
+            "subheading": "",
+            "link": ""
+          }
+        },
+        "text_KqJNjF": {
+          "type": "text",
+          "settings": {
+            "heading": "OUTSTANDING ALL-NATURAL FLAVOR",
+            "subheading": "",
+            "link": ""
+          }
+        },
+        "text_W3RAgc": {
+          "type": "text",
+          "settings": {
+            "heading": "100% SWEETENED WITH HONEY",
+            "subheading": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_QXM4xW",
+        "text_KqJNjF",
+        "text_W3RAgc"
+      ],
+      "settings": {
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "colors": "dark"
+      }
+    },
+    "holiday_character_videos_HND7J3": {
+      "type": "holiday-character-videos",
+      "blocks": {
+        "video_EWbPJ7": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "",
+            "character_name": "Santa Claus",
+            "character_description": "The big man himself shares his thoughts!"
+          }
+        },
+        "video_EM443G": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "",
+            "character_name": "Rudolph",
+            "character_description": "Our favorite red-nosed reindeer"
+          }
+        },
+        "video_3f4zUH": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "character_name": "Elf",
+            "character_description": "One of Santa's helpers"
+          }
+        },
+        "video_qVBnMX": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "character_name": "Mrs. Claus",
+            "character_description": "Santa's better half"
+          }
+        }
+      },
+      "block_order": [
+        "video_EWbPJ7",
+        "video_EM443G",
+        "video_3f4zUH",
+        "video_qVBnMX"
+      ],
+      "name": "Holiday Character Videos",
+      "settings": {
+        "title": "Meet Our Holiday Characters",
+        "description": "<p>Watch our festive character skits!</p>"
+      }
+    },
+    "rich_text_aXxeqR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4W8gdL": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE DETAILS",
+            "heading--text-size": 30,
+            "heading_bottom_spacing": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_4W8gdL"
+      ],
+      "settings": {
+        "section_width": "narrow",
+        "text_alignment_desktop": "left",
+        "text_alignment_mobile": "left",
+        "section_padding_top": 30,
+        "section_padding_bottom": 10,
+        "colors": "white"
+      }
+    },
+    "accordion_with_image_M4pb4c": {
+      "type": "accordion-with-image",
+      "blocks": {
+        "accordion_rggJaM": {
+          "type": "accordion",
+          "settings": {
+            "accordion_header": "What is the ABV of Spirited Hive cocktails?",
+            "open_by_default": false,
+            "text": "<p>Spirited Hive cocktails are <strong>7% ABV</strong>, giving you the perfect balance of strength and smoothness. Crafted with real spirits, they’re designed for a flavorful, elevated drinking experience.</p>",
+            "page": ""
+          }
+        },
+        "accordion_wWgBeK": {
+          "type": "accordion",
+          "settings": {
+            "accordion_header": "Are Spirited Hive cocktails all-natural?",
+            "open_by_default": false,
+            "text": "<p>Yes! We only use<strong> natural and organic ingredients</strong> in every can. Our cocktails are<strong>100% sweetened with organic wildflower honey</strong>, with no artificial flavors, synthetic sweeteners, or preservatives—just clean, real ingredients. </p>",
+            "page": ""
+          }
+        },
+        "accordion_bTyLAG": {
+          "type": "accordion",
+          "settings": {
+            "accordion_header": "Why do you use organic wildflower honey?",
+            "open_by_default": false,
+            "text": "<p>We use <strong>100% organic wildflower honey </strong>because we believe in real, high-quality ingredients—and because it’s our founder Jack’s favorite type of honey. Wildflower honey offers a naturally rich, complex flavor that enhances our cocktails, making them smooth, balanced, and uniquely delicious.</p>",
+            "page": ""
+          }
+        },
+        "accordion_h6A9XF": {
+          "type": "accordion",
+          "settings": {
+            "accordion_header": "What makes Spirited Hive different?",
+            "open_by_default": false,
+            "text": "<p>Spirited Hive is <strong>all-natural and sweetened with organic honey</strong>, setting us apart from other canned cocktails that rely on synthetic sweeteners and artificial ingredients. We believe in <strong>better-for-you</strong> drinks that don’t compromise on taste, so you can sip with confidence.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_rggJaM",
+        "accordion_wWgBeK",
+        "accordion_bTyLAG",
+        "accordion_h6A9XF"
+      ],
+      "settings": {
+        "section_title": "",
+        "section_description": "",
+        "faq_icon": "plus_minus",
+        "accordion_image": "shopify://shop_images/Artboard_1_d00dccfa-a030-47ff-9878-cf30cdc30282.png",
+        "title": "",
+        "text": "",
+        "link": "",
+        "button_text": "",
+        "image_position_desktop": "right",
+        "image_position_mobile": "top",
+        "section_width": "narrow",
+        "section_padding_top": 10,
+        "section_padding_bottom": 60,
+        "image--background-color": "rgba(0,0,0,0)",
+        "image--text-color": "#333333",
+        "button_background_color": "#242424",
+        "button_text_color": "#ffffff",
+        "colors": "light"
+      }
+    },
+    "animated_text_9ijjLw": {
+      "type": "animated-text",
+      "blocks": {
+        "text_static_NhkyLN": {
+          "type": "text_static",
+          "settings": {
+            "text_static": "<p>BETTER-FOR-YOU</p>",
+            "max_width_desktop": 100,
+            "max_width_mobile": 100,
+            "text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_dynamic_YnMXVR": {
+          "type": "text_dynamic",
+          "settings": {
+            "text_dynamic": "canned cocktail,in every way",
+            "animation_timing": 500,
+            "rotation_interval": 5000,
+            "text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_static_8NALdT": {
+          "type": "text_static",
+          "disabled": true,
+          "settings": {
+            "text_static": "<p>your product is.</p>",
+            "max_width_desktop": 100,
+            "max_width_mobile": 100,
+            "text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "button_CF4x8A": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_url": "",
+            "button_text": "Shop now",
+            "buttons_style": "filled",
+            "override_button_colors": false,
+            "color_button_background": "#e68819",
+            "color_button_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "text_static_NhkyLN",
+        "text_dynamic_YnMXVR",
+        "text_static_8NALdT",
+        "button_CF4x8A"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image_desktop": "shopify://shop_images/Spirited_Hive_-_RTD_-_Core_carton_web.png",
+        "height_desktop": "s",
+        "text_position_desktop": "center",
+        "text_size_desktop": 60,
+        "height_mobile": "m",
+        "text_position_mobile": "left",
+        "text_size_mobile": 22,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "colors": "accent"
+      }
+    },
+    "product-description": {
+      "type": "template--product--description",
+      "blocks": {
+        "product-description": {
+          "type": "product_description",
+          "settings": {
+            "collapsible_tab": true,
+            "title": "Description",
+            "open_by_default": false
+          }
+        },
+        "collapsible-tab-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "title": "Product details",
+            "open_by_default": false,
+            "text": "<p>Share some information about your product</p>",
+            "page": ""
+          }
+        },
+        "collapsible-tab-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "title": "Product details",
+            "open_by_default": false,
+            "text": "<p>Share some information about your product</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "product-description",
+        "collapsible-tab-1",
+        "collapsible-tab-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "open_close_icon": "plus_minus",
+        "section_width": "content",
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "colors": "white",
+        "enable_readmore": false
+      }
+    },
+    "image_with_text_overlay_Y3Y9AG": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_RXLJL3": {
+          "type": "heading",
+          "settings": {
+            "title": "Image with text overlay",
+            "font_size_desktop": 28,
+            "font_size_mobile": 28,
+            "heading_bottom_spacing": 25
+          }
+        },
+        "text_DpX8dt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add an image paired with text to give focus to your chosen product, collection, or blog post.</p>",
+            "font_size_desktop": 16,
+            "font_size_mobile": 16,
+            "text_bottom_spacing": 20
+          }
+        }
+      },
+      "block_order": [
+        "heading_RXLJL3",
+        "text_DpX8dt"
+      ],
+      "disabled": true,
+      "settings": {
+        "height_desktop": "original",
+        "text_position_desktop": "center",
+        "text_alignment_desktop": "center",
+        "caption_width_desktop": 50,
+        "height_mobile": "original",
+        "text_position_mobile": "center",
+        "text_alignment_mobile": "center",
+        "section_link": "",
+        "animation_style": "none",
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "text_color": "#ffffff",
+        "caption_bg_color": "rgba(0,0,0,0)",
+        "image_overlay_color": "#242424",
+        "image_overlay_opacity": 0
+      }
+    },
+    "product-recommendations": {
+      "type": "template--product--recommendations",
+      "settings": {
+        "title": "YOU'LL ALSO LOVE THESE...",
+        "description": "",
+        "layout_style": "slider",
+        "products_to_show": 6,
+        "grid-desktop": 3,
+        "grid-mobile": "2",
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "colors": "light",
+        "override_button_colors": false,
+        "button_background_color": "#f2bd35",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "174093866105199c67": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_EgUG4m": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1920,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_EgUG4m"
+      ],
+      "settings": {
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "include_margins": true
+      }
+    },
+    "holiday_fake_reviews_77JNPc": {
+      "type": "holiday-fake-reviews",
+      "blocks": {
+        "review_qqdVdr": {
+          "type": "review",
+          "settings": {
+            "character_name": "Santa Claus",
+            "location": "North Pole",
+            "rating": 5,
+            "review_text": "Ho ho ho! After a long night of deliveries, nothing beats a Spirited Hive cocktail. The honey sweetness reminds me of Mrs. Claus's cookies. Five stars! 🎅",
+            "verified": true
+          }
+        },
+        "review_wCibqL": {
+          "type": "review",
+          "settings": {
+            "character_name": "Rudolph",
+            "location": "Santa's Stable",
+            "rating": 5,
+            "review_text": "My nose might be red, but it's got nothing on this delicious Cranberry Vodka! Perfect after guiding the sleigh. Highly recommend! 🦌",
+            "verified": true
+          }
+        },
+        "review_xqyqQc": {
+          "type": "review",
+          "settings": {
+            "character_name": "Buddy the Elf",
+            "location": "NYC",
+            "rating": 5,
+            "review_text": "SANTA! I KNOW HIM! And I know good cocktails! This is the best! The honey makes it sweet like syrup on spaghetti! 🎄",
+            "verified": true
+          }
+        },
+        "review_Xz4KDV": {
+          "type": "review",
+          "settings": {
+            "character_name": "The Grinch",
+            "location": "Mount Crumpit",
+            "rating": 5,
+            "review_text": "I hate to admit it, but this cocktail might have made my heart grow three sizes. The Cranberry Vodka is surprisingly delightful. Fine, I'll give it 5 stars. 💚",
+            "verified": true
+          }
+        }
+      },
+      "block_order": [
+        "review_qqdVdr",
+        "review_wCibqL",
+        "review_xqyqQc",
+        "review_Xz4KDV"
+      ],
+      "name": "Holiday Fake Reviews",
+      "settings": {
+        "title": "What The North Pole Is Saying",
+        "subtitle": "Reviews from our favorite holiday characters"
+      }
+    }
+  },
+  "order": [
+    "product-form",
+    "text_adverts_637L9g",
+    "holiday_character_videos_HND7J3",
+    "holiday_fake_reviews_77JNPc",
+    "rich_text_aXxeqR",
+    "accordion_with_image_M4pb4c",
+    "animated_text_9ijjLw",
+    "product-description",
+    "image_with_text_overlay_Y3Y9AG",
+    "product-recommendations",
+    "174093866105199c67"
+  ]
+}

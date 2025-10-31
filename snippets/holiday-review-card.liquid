@@ -1,0 +1,62 @@
+{% comment %}
+  Holiday Review Card Snippet
+  Renders a single character review card
+
+  Parameters:
+  - block: The review block containing settings
+{% endcomment %}
+
+<div class="fake-review-card">
+  <div class="review-header">
+    {% if block.settings.character_image != blank %}
+      <img
+        src="{{ block.settings.character_image | image_url: width: 140 }}"
+        alt="{{ block.settings.character_name }}"
+        class="character-avatar"
+        loading="lazy"
+      >
+    {% else %}
+      <div class="character-avatar-placeholder">
+        {{ block.settings.character_name | slice: 0 }}
+      </div>
+    {% endif %}
+
+    <div class="review-meta">
+      {% if block.settings.character_name != blank %}
+        <h3 class="character-name">{{ block.settings.character_name }}</h3>
+      {% endif %}
+
+      {% if block.settings.rating %}
+        <div class="review-stars">
+          {% for i in (1..5) %}
+            {% if i <= block.settings.rating %}
+              <span class="star">★</span>
+            {% else %}
+              <span class="star" style="opacity: 0.3;">★</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.location != blank %}
+        <p class="character-location">{{ block.settings.location }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if block.settings.review_text != blank %}
+    <div class="review-content">
+      <p class="review-text">"{{ block.settings.review_text }}"</p>
+    </div>
+  {% endif %}
+
+  {% if block.settings.verified %}
+    <div class="review-badge">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      Verified Purchase
+    </div>
+  {% endif %}
+</div>
