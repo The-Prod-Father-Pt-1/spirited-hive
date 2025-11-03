@@ -65,3 +65,71 @@ section[style*="background"] {
   color: #ffffff !important;
   border-color: #333333 !important;
 }
+
+/* ========================================
+   ALL TEXT WHITE ON RED BACKGROUND
+   ======================================== */
+
+/* Force ALL text to be white on red background */
+body,
+body *,
+h1, h2, h3, h4, h5, h6,
+p, span, div, a, li, ul, ol,
+.heading, .text, .caption,
+.product__title,
+.product__price,
+.product__description,
+.product-single__title,
+.product-single__vendor,
+.product-single__price,
+.product-form__item label,
+.product-form__input,
+.rte, .rte *,
+.shopify-section h1,
+.shopify-section h2,
+.shopify-section h3,
+.shopify-section h4,
+.shopify-section h5,
+.shopify-section h6,
+.shopify-section p,
+.shopify-section span,
+.shopify-section div,
+.shopify-section a,
+.image-with-text-slideshow h1,
+.image-with-text-slideshow h2,
+.image-with-text-slideshow h3,
+.image-with-text-slideshow p,
+.image-with-text-slideshow span,
+.image-with-text-slideshow div,
+.collage-builder h1,
+.collage-builder h2,
+.collage-builder h3,
+.collage-builder p,
+.featured-collection h1,
+.featured-collection h2,
+.featured-collection h3,
+.featured-collection p,
+.accordion h1,
+.accordion h2,
+.accordion h3,
+.accordion p,
+.accordion__title,
+.accordion__content,
+.scrolling-banner h1,
+.scrolling-banner h2,
+.scrolling-banner p,
+header, header *,
+footer, footer *,
+nav, nav * {
+  color: #ffffff !important;
+}
+
+/* Links on red background */
+a:not(.button):not(.btn) {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+a:not(.button):not(.btn):hover {
+  color: #f0f0f0 !important;
+}
