@@ -42,3 +42,26 @@ div[style*="background"],
 section[style*="background"] {
   background-color: #DC143C !important;
 }
+
+/* ========================================
+   HOLIDAY HERO BUTTON - BLACK WITH WHITE TEXT
+   ======================================== */
+
+/* Force hero button to be black with white text */
+.image-with-text-slideshow .button,
+.image-with-text-slideshow .btn,
+.image-with-text-slideshow a.button--filled,
+.image-with-text-slideshow .button--filled {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+.image-with-text-slideshow .button:hover,
+.image-with-text-slideshow .btn:hover,
+.image-with-text-slideshow a.button--filled:hover,
+.image-with-text-slideshow .button--filled:hover {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  border-color: #333333 !important;
+}
