@@ -7,10 +7,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   pointer-events: none;
   z-index: 9999;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .snowflake {
@@ -19,29 +19,28 @@
   color: white;
   font-size: 1em;
   user-select: none;
-  animation: snowfall linear infinite, drift 3s ease-in-out infinite;
+  animation: snowfall linear infinite;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
   will-change: transform, opacity;
 }
 
 @keyframes snowfall {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) translateX(0) rotate(0deg);
     opacity: 1;
   }
-  100% {
-    transform: translateY(100vh) rotate(360deg);
-    opacity: 0.6;
-  }
-}
-
-/* Add subtle horizontal drift for more realism */
-@keyframes drift {
-  0%, 100% {
-    transform: translateX(0);
+  25% {
+    transform: translateY(25vh) translateX(-10px) rotate(90deg);
   }
   50% {
-    transform: translateX(20px);
+    transform: translateY(50vh) translateX(10px) rotate(180deg);
+  }
+  75% {
+    transform: translateY(75vh) translateX(-5px) rotate(270deg);
+  }
+  100% {
+    transform: translateY(110vh) translateX(5px) rotate(360deg);
+    opacity: 0.6;
   }
 }
 
