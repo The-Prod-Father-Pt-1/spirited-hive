@@ -245,56 +245,6 @@
         "colors": "dark"
       }
     },
-    "holiday_character_videos_HND7J3": {
-      "type": "holiday-character-videos",
-      "blocks": {
-        "video_EWbPJ7": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "video_url": "",
-            "character_name": "Santa Claus",
-            "character_description": "The big man himself shares his thoughts!"
-          }
-        },
-        "video_EM443G": {
-          "type": "video",
-          "disabled": true,
-          "settings": {
-            "video_url": "",
-            "character_name": "Rudolph",
-            "character_description": "Our favorite red-nosed reindeer"
-          }
-        },
-        "video_3f4zUH": {
-          "type": "video",
-          "settings": {
-            "video_url": "",
-            "character_name": "Elf",
-            "character_description": "One of Santa's helpers"
-          }
-        },
-        "video_qVBnMX": {
-          "type": "video",
-          "settings": {
-            "video_url": "",
-            "character_name": "Mrs. Claus",
-            "character_description": "Santa's better half"
-          }
-        }
-      },
-      "block_order": [
-        "video_EWbPJ7",
-        "video_EM443G",
-        "video_3f4zUH",
-        "video_qVBnMX"
-      ],
-      "name": "Holiday Character Videos",
-      "settings": {
-        "title": "Meet Our Holiday Characters",
-        "description": "<p>Watch our festive character skits!</p>"
-      }
-    },
     "rich_text_aXxeqR": {
       "type": "rich-text",
       "blocks": {
@@ -580,69 +530,11 @@
         "section_padding_bottom": 0,
         "include_margins": true
       }
-    },
-    "holiday_fake_reviews_77JNPc": {
-      "type": "holiday-fake-reviews",
-      "blocks": {
-        "review_qqdVdr": {
-          "type": "review",
-          "settings": {
-            "character_name": "Santa Claus",
-            "location": "North Pole",
-            "rating": 5,
-            "review_text": "Ho ho ho! After a long night of deliveries, nothing beats a Spirited Hive cocktail. The honey sweetness reminds me of Mrs. Claus's cookies. Five stars! 🎅",
-            "verified": true
-          }
-        },
-        "review_wCibqL": {
-          "type": "review",
-          "settings": {
-            "character_name": "Rudolph",
-            "location": "Santa's Stable",
-            "rating": 5,
-            "review_text": "My nose might be red, but it's got nothing on this delicious Cranberry Vodka! Perfect after guiding the sleigh. Highly recommend! 🦌",
-            "verified": true
-          }
-        },
-        "review_xqyqQc": {
-          "type": "review",
-          "settings": {
-            "character_name": "Buddy the Elf",
-            "location": "NYC",
-            "rating": 5,
-            "review_text": "SANTA! I KNOW HIM! And I know good cocktails! This is the best! The honey makes it sweet like syrup on spaghetti! 🎄",
-            "verified": true
-          }
-        },
-        "review_Xz4KDV": {
-          "type": "review",
-          "settings": {
-            "character_name": "The Grinch",
-            "location": "Mount Crumpit",
-            "rating": 5,
-            "review_text": "I hate to admit it, but this cocktail might have made my heart grow three sizes. The Cranberry Vodka is surprisingly delightful. Fine, I'll give it 5 stars. 💚",
-            "verified": true
-          }
-        }
-      },
-      "block_order": [
-        "review_qqdVdr",
-        "review_wCibqL",
-        "review_xqyqQc",
-        "review_Xz4KDV"
-      ],
-      "name": "Holiday Fake Reviews",
-      "settings": {
-        "title": "What The North Pole Is Saying",
-        "subtitle": "Reviews from our favorite holiday characters"
-      }
     }
   },
   "order": [
     "product-form",
     "text_adverts_637L9g",
-    "holiday_character_videos_HND7J3",
-    "holiday_fake_reviews_77JNPc",
     "rich_text_aXxeqR",
     "accordion_with_image_M4pb4c",
     "animated_text_9ijjLw",
