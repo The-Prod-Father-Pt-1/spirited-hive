@@ -7,7 +7,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 180px;
+  height: 250px; /* Taller mounds */
   z-index: 10000;
   pointer-events: none;
   overflow: hidden;
@@ -33,7 +33,7 @@
   bottom: 0;
   left: -10%;
   width: 120%;
-  height: 70px;
+  height: 100px; /* Taller */
   background: #ffffff;
   /* Lumpy irregular shape */
   clip-path: polygon(
@@ -73,7 +73,7 @@
   bottom: 0;
   left: -5%;
   width: 110%;
-  height: 100px;
+  height: 140px; /* Taller */
   background: #ffffff;
   /* More lumpy irregular shape */
   clip-path: polygon(
@@ -112,7 +112,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 130px;
+  height: 180px; /* Much taller */
   background: linear-gradient(to bottom, #ffffff 0%, #f0f8ff 100%);
   /* Most irregular lumpy shape */
   clip-path: polygon(
@@ -196,7 +196,7 @@
 /* Christmas Trees */
 .christmas-tree {
   position: absolute;
-  bottom: 35px;
+  bottom: 60px; /* Raised higher on taller mounds */
   z-index: 4;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
@@ -227,7 +227,7 @@
 /* Snowman */
 .snowman {
   position: absolute;
-  bottom: 35px;
+  bottom: 60px; /* Raised higher on taller mounds */
   left: 40%;
   width: 70px;
   height: 90px;
@@ -243,19 +243,19 @@
 /* Mobile - shorter mounds and smaller decorations */
 @media (max-width: 768px) {
   .holiday-snow-mounds {
-    height: 120px;
+    height: 160px; /* Taller on mobile too */
   }
 
   .snow-mound--back::before {
-    height: 50px;
+    height: 70px; /* Taller */
   }
 
   .snow-mound--middle::before {
-    height: 70px;
+    height: 95px; /* Taller */
   }
 
   .snow-mound--front::before {
-    height: 90px;
+    height: 120px; /* Taller */
   }
 
   .snow-mound--front::after {
@@ -264,7 +264,7 @@
   }
 
   .christmas-tree {
-    bottom: 25px;
+    bottom: 40px; /* Raised higher on taller mobile mounds */
   }
 
   .christmas-tree--1 {
@@ -283,7 +283,7 @@
   }
 
   .snowman {
-    bottom: 25px;
+    bottom: 40px; /* Raised higher on taller mobile mounds */
     width: 50px;
     height: 65px;
   }
