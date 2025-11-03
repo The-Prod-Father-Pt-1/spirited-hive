@@ -76,18 +76,24 @@
     rgba(0,0,0,0.3) 100%);
 }
 
-/* Mobile: Fewer lights and smaller size */
+/* Mobile: Fewer lights, smaller size, and positioned at very top to avoid overlap */
 @media (max-width: 768px) {
   .holiday-lights {
-    height: 40px;
+    top: 0; /* Move to very top on mobile */
+    height: 30px; /* Smaller height */
+    padding: 0 10px; /* Less padding */
   }
 
   .light-bulb {
-    width: 10px;
-    height: 15px;
+    width: 8px; /* Smaller bulbs */
+    height: 12px;
   }
 
   .light-bulb:nth-child(n+21) {
-    display: none;
+    display: none; /* Show only 20 lights on mobile */
+  }
+
+  .holiday-lights::before {
+    top: 6px; /* Adjust wire position */
   }
 }
