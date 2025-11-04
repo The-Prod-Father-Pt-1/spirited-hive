@@ -200,3 +200,38 @@ a:not(.button):not(.btn):hover {
 .template-product .text-with-icon svg {
   fill: #ffffff !important;
 }
+
+/* Variant buttons (4 pack, 8 pack, 12 pack, 24 pack) - Black style */
+.template-product .product-form label[for*="template--"],
+.template-product .product-form .variant-input-wrapper label,
+.template-product .product-form .swatch-input-wrapper label,
+.template-product .product-form fieldset label {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #000000 !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  display: inline-block !important;
+  min-width: 100px !important;
+}
+
+/* Variant button hover state */
+.template-product .product-form label[for*="template--"]:hover,
+.template-product .product-form .variant-input-wrapper label:hover,
+.template-product .product-form .swatch-input-wrapper label:hover,
+.template-product .product-form fieldset label:hover {
+  background-color: #333333 !important;
+  border-color: #333333 !important;
+}
+
+/* Selected variant button */
+.template-product .product-form input:checked + label,
+.template-product .product-form input[type="radio"]:checked + label {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #ffffff !important;
+}
