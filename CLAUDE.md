@@ -275,6 +275,43 @@ shopify theme pull
 
 ---
 
+## Holiday Campaign Checkpoints
+
+The holiday campaign has multiple checkpoints for safe restoration:
+
+### Checkpoint v4 (CURRENT - Navigation Complete)
+- **Tag:** `checkpoint-v4-navigation-complete`
+- **Commit:** `aa5e046`
+- **Status:** ✅ PERFECT - All navigation visible
+- **Doc:** `docs/CHECKPOINT-GROUND-TRUTH-v4.md`
+- **Restore:** `git checkout checkpoint-v4-navigation-complete`
+
+**Includes:**
+- All navigation text black and visible
+- SVG icons properly displayed (search, login, cart)
+- Product variant buttons styled correctly
+- Hero CTA links to Cranberry product
+- All text visible on red background
+
+### Checkpoint v3 (Product Page + Reviews)
+- **Tag:** `checkpoint-v3-product-reviews-complete`
+- **Commit:** `91f9d9f`
+- **Doc:** `docs/CHECKPOINT-GROUND-TRUTH-v3.md`
+- **Restore:** `git checkout checkpoint-v3-product-reviews-complete`
+
+### Quick Restore Commands
+```bash
+# Restore to v4 (current perfect state)
+git checkout checkpoint-v4-navigation-complete
+shopify theme push --theme="Hive for the Holidays"
+
+# Restore to v3 (before navigation fixes)
+git checkout checkpoint-v3-product-reviews-complete
+shopify theme push --theme="Hive for the Holidays"
+```
+
+---
+
 ## Commands That Require Manual Terminal Execution
 
 **⚠️ IMPORTANT:** Some Shopify CLI commands require interactive prompts that cannot be automated through Claude Code. These MUST be run directly in your terminal by the user.
