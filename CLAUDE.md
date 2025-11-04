@@ -330,3 +330,62 @@ These may also require manual execution:
 
 **Best Practice:**
 When Claude indicates a command needs to be run manually, copy the exact command provided and run it in your terminal. Claude will provide clear instructions on what inputs to provide at each prompt.
+
+---
+
+## Ground Truth Checkpoints
+
+**Purpose:** Document stable, tested states of the project that can be restored if needed.
+
+**Location:** `docs/CHECKPOINT-GROUND-TRUTH-v*.md`
+
+### Current Checkpoint: v3 (2025-11-03)
+
+**Commit:** `91f9d9f` (CSS specificity fix for review text colors)
+**Shopify Theme:** "Hive for the Holidays" (#153001951460)
+**Documentation:** `docs/CHECKPOINT-GROUND-TRUTH-v3.md`
+
+**What's Included:**
+- Complete holiday campaign with crimson red background (#DC143C)
+- Black hero button with white text
+- Video carousel section (4 epic video placeholders)
+  - Tinder-style swipe on mobile
+  - Fully responsive (9:16 mobile, 16:9 desktop)
+- 18 hilarious Christmas character reviews
+  - Horizontal scroll on mobile with snap-to-center
+  - Grid layout on desktop
+  - Glassmorphism card effects
+- All text visibility issues resolved:
+  - Review text: Black (#000000) on white cards
+  - Character names: White text in black bubble badges
+  - Holiday badges: Black text on white badges
+  - Stars & headers: White on red background
+- Holiday effects: snowfall, snow mounds, Christmas lights
+- Date-based auto-switching (holiday reviews Nov 1 - Dec 31)
+
+**Quick Restore:**
+```bash
+git checkout 91f9d9f
+shopify theme push --theme="Hive for the Holidays"
+```
+
+**Full Documentation:** See `docs/CHECKPOINT-GROUND-TRUTH-v3.md` for complete restoration guide, verification checklist, and technical details.
+
+### Creating New Checkpoints
+
+When major features are completed and tested:
+
+1. Create new checkpoint document: `docs/CHECKPOINT-GROUND-TRUTH-v[X].md`
+2. Include:
+   - Commit hash and branch
+   - Complete feature list
+   - Restoration instructions
+   - Verification checklist
+   - What changed since previous checkpoint
+3. Update this section in CLAUDE.md with new checkpoint reference
+4. Commit checkpoint documentation to git
+
+**Checkpoint History:**
+- **v3** (2025-11-03): Complete holiday campaign with video carousel & character reviews
+- **v2** (2025-11-03): Holiday theme with white text, black button, and snow effects
+- **v1** (2025-10-31): Initial holiday theme with red background and effects
