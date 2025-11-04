@@ -278,10 +278,20 @@ a:not(.button):not(.btn):hover {
 .site-header__icons button,
 .site-header__icons .icon,
 .top-links--icon-links a,
-.top-links--icon-links button,
-.top-links--icon-links svg {
+.top-links--icon-links button {
   color: #000000 !important;
-  fill: #000000 !important;
+}
+
+/* SVG icons - stroke only (no fill override) */
+.top-links--icon-links svg,
+.site-header__icons svg {
+  stroke: #000000 !important;
+}
+
+/* Remove fill override to let SVGs display naturally */
+.top-links--icon-links svg path,
+.site-header__icons svg path {
+  fill: none !important;
   stroke: #000000 !important;
 }
 
