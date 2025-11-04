@@ -335,12 +335,36 @@
     }
   }
 
-  /* Desktop */
+  /* Desktop - Auto-scrolling animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-400px * 9 - 2rem * 9));
+    }
+  }
+
   @media (min-width: 1025px) {
     .testimonials-block {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      overflow: hidden;
+      position: relative;
+      display: flex;
       gap: 2rem;
+      animation: scroll 120s linear infinite;
+    }
+
+    .testimonials-block:hover {
+      animation-play-state: paused;
+    }
+
+    .testimonial--single-item {
+      min-width: 400px;
+      flex-shrink: 0;
+    }
+
+    .holiday-review {
+      height: 100%;
     }
 
     .holiday-review:hover {
@@ -350,6 +374,28 @@
     }
   }
 </style>
+
+<script>
+  // Duplicate reviews for seamless infinite scroll
+  document.addEventListener('DOMContentLoaded', function() {
+    const testimonialsBlock = document.querySelector('[data-wetheme-section-type="holiday-reviews"] .testimonials-block');
+
+    if (testimonialsBlock && window.innerWidth >= 1025) {
+      // Clone all review items
+      const reviews = Array.from(testimonialsBlock.children);
+
+      // Duplicate items 3 times for seamless loop
+      reviews.forEach(review => {
+        const clone1 = review.cloneNode(true);
+        const clone2 = review.cloneNode(true);
+        const clone3 = review.cloneNode(true);
+        testimonialsBlock.appendChild(clone1);
+        testimonialsBlock.appendChild(clone2);
+        testimonialsBlock.appendChild(clone3);
+      });
+    }
+  });
+</script>
 
 {% schema %}
 {
