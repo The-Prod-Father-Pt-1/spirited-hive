@@ -233,15 +233,12 @@
     background: #DC143C !important;
   }
 
-  .section--holiday-reviews-wrapper * {
-    color: #ffffff !important;
-  }
-
+  /* White text for section headers and general content */
   .section--holiday-reviews-wrapper h1,
   .section--holiday-reviews-wrapper h2,
   .section--holiday-reviews-wrapper h3,
-  .section--holiday-reviews-wrapper p,
-  .section--holiday-reviews-wrapper span {
+  .section--holiday-reviews-wrapper p:not(.holiday-review__text *),
+  .section--holiday-reviews-wrapper .dynamic-section-header {
     color: #ffffff !important;
   }
 
@@ -271,7 +268,8 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   }
 
-  .holiday-review__badge {
+  .section--holiday-reviews-wrapper .holiday-review__badge,
+  .section--holiday-reviews-wrapper .holiday-review__badge * {
     margin-top: 1rem;
     font-size: 0.75rem;
     color: #000000 !important; /* Black text for visibility on white badge */
