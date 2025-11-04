@@ -228,36 +228,121 @@
 </div>
 
 <style>
+  /* Holiday theme - red background with white text */
+  .section--holiday-reviews-wrapper {
+    background: #DC143C !important;
+  }
+
+  .section--holiday-reviews-wrapper * {
+    color: #ffffff !important;
+  }
+
+  .section--holiday-reviews-wrapper h1,
+  .section--holiday-reviews-wrapper h2,
+  .section--holiday-reviews-wrapper h3,
+  .section--holiday-reviews-wrapper p,
+  .section--holiday-reviews-wrapper span {
+    color: #ffffff !important;
+  }
+
   .holiday-review {
     position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
   }
 
   .holiday-review__text {
     font-style: italic;
+    color: #ffffff !important;
   }
 
   .holiday-review__character {
-    color: #d62828;
+    color: #ffffff !important;
     font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .holiday-review__badge {
     margin-top: 1rem;
     font-size: 0.75rem;
-    color: #d62828;
-    background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%);
+    color: #DC143C !important;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     display: inline-block;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 
+  /* Star ratings - white on red */
+  .testimonials--star-wrapper svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+  }
+
+  /* Mobile - horizontal scroll */
   @media (max-width: 768px) {
+    .testimonials-block {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; /* Hide scrollbar Firefox */
+      padding: 0 1rem 1rem 1rem;
+      margin: 0 -1rem;
+    }
+
+    .testimonials-block::-webkit-scrollbar {
+      display: none; /* Hide scrollbar Chrome/Safari */
+    }
+
+    .testimonial--single-item {
+      min-width: 85vw;
+      flex-shrink: 0;
+      scroll-snap-align: center;
+    }
+
+    .holiday-review {
+      padding: 1.5rem;
+    }
+
     .holiday-review__badge {
       font-size: 0.7rem;
       padding: 0.4rem 0.8rem;
+    }
+
+    .testimonials--star-wrapper {
+      margin: 0.75rem 0;
+    }
+  }
+
+  /* Tablet */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .testimonials-block {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+  }
+
+  /* Desktop */
+  @media (min-width: 1025px) {
+    .testimonials-block {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .holiday-review:hover {
+      transform: translateY(-4px);
+      transition: transform 0.3s ease;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     }
   }
 </style>
