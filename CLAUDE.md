@@ -272,3 +272,61 @@ shopify theme pull
 ```
 
 **Important:** Always test in development theme before pushing to live store.
+
+---
+
+## Commands That Require Manual Terminal Execution
+
+**⚠️ IMPORTANT:** Some Shopify CLI commands require interactive prompts that cannot be automated through Claude Code. These MUST be run directly in your terminal by the user.
+
+### Creating a New Theme in Shopify Theme Library
+
+**Command:**
+```bash
+shopify theme push --unpublished --store spirited-hive.myshopify.com
+```
+
+**What happens:**
+1. CLI will prompt: "Name of the new theme:"
+2. Enter your theme name (e.g., "Why Not Us Labs - Spirits for The Holidays")
+3. Press Enter
+4. Theme uploads to Shopify (takes 1-2 minutes)
+5. Returns preview URL and theme editor link
+
+**Why this is needed:**
+- To create a brand new theme variation in the Shopify theme library
+- To test major changes without affecting current live/development themes
+- To create campaign-specific themes (like holiday campaigns)
+
+**After completion:**
+- New theme appears in Shopify Admin → Online Store → Themes
+- Theme is unpublished (safe to customize before going live)
+- You get a preview URL to share with team/clients
+
+### Authentication Commands
+
+**Command:**
+```bash
+shopify auth login
+```
+
+**What happens:**
+1. Generates a device code (e.g., VJVR-SVSK)
+2. Opens browser to https://accounts.shopify.com/activate-with-code
+3. User enters code and logs in
+4. CLI confirms authentication
+
+**When needed:**
+- First time setting up Shopify CLI on new computer
+- After authentication expires
+- When switching between Shopify stores
+
+### Other Interactive Commands
+
+These may also require manual execution:
+- `shopify theme list` - Interactive selection of themes
+- `shopify theme pull` - May prompt for theme selection
+- `shopify theme delete` - Confirmation prompts
+
+**Best Practice:**
+When Claude indicates a command needs to be run manually, copy the exact command provided and run it in your terminal. Claude will provide clear instructions on what inputs to provide at each prompt.
