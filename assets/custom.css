@@ -248,7 +248,9 @@ a:not(.button):not(.btn):hover {
 .site-header__nav .site-nav--link-text,
 .site-header__nav .animated-underline,
 .site-header__links .site-nav__link,
-.top-links .site-nav__link {
+.top-links .site-nav__link,
+.top-links .site-nav--link-text,
+.top-links .animated-underline {
   color: #000000 !important;
 }
 
@@ -259,18 +261,28 @@ a:not(.button):not(.btn):hover {
   color: #333333 !important;
 }
 
-/* Dropdown menu text also black */
-.site-header__nav .site-nav__dropdown-link,
-.site-nav__dropdown .site-nav__link {
+/* Dropdown menu text - ALL levels black */
+.site-header__nav .site-nav__dropdown .site-nav__link,
+.site-header__nav .site-nav__dropdown .site-nav--link-text,
+.site-header__nav .site-nav__dropdown .animated-underline,
+.site-header__nav .site-nav__subdropdown .site-nav__link,
+.site-header__nav .site-nav__subdropdown .site-nav--link-text,
+.site-header__nav .site-nav__subdropdown .animated-underline,
+.site-nav__dropdown .site-nav--link-text,
+.site-nav__subdropdown .site-nav--link-text {
   color: #000000 !important;
 }
 
 /* Icon links in header (search, login, cart) - black */
 .site-header__icons a,
 .site-header__icons button,
-.site-header__icons .icon {
+.site-header__icons .icon,
+.top-links--icon-links a,
+.top-links--icon-links button,
+.top-links--icon-links svg {
   color: #000000 !important;
   fill: #000000 !important;
+  stroke: #000000 !important;
 }
 
 /* Exception: Don't change green button styling */
