@@ -133,3 +133,70 @@ a:not(.button):not(.btn) {
 a:not(.button):not(.btn):hover {
   color: #f0f0f0 !important;
 }
+
+/* ============================================
+   PRODUCT PAGE HOLIDAY THEME
+   Applied only to Cranberry Vodka product
+   ============================================ */
+
+/* Red background for product form section */
+.template-product .product-form__wrapper {
+  background: #DC143C !important;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+/* White text for all product info */
+.template-product .product__title,
+.template-product .product__price,
+.template-product .product__description,
+.template-product .product-form h1,
+.template-product .product-form h2,
+.template-product .product-form h3,
+.template-product .product-form p,
+.template-product .product-form label,
+.template-product .product-form span,
+.template-product .product-form .price,
+.template-product .product-form .product-price {
+  color: #ffffff !important;
+}
+
+/* Black Add to Cart button with white text */
+.template-product .product-form .button,
+.template-product .product-form button[type="submit"],
+.template-product .product-form .product-form__submit {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+.template-product .product-form .button:hover,
+.template-product .product-form button[type="submit"]:hover {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+/* Variant selector styling */
+.template-product .product-form select,
+.template-product .product-form input[type="number"],
+.template-product .product-form .quantity__input {
+  border: 2px solid #ffffff !important;
+  color: #000000;
+  background: #ffffff;
+}
+
+/* Star ratings white */
+.template-product .star-rating svg,
+.template-product .product-form .icon {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Text with icons - white */
+.template-product .text-with-icon {
+  color: #ffffff !important;
+}
+
+.template-product .text-with-icon svg {
+  fill: #ffffff !important;
+}
