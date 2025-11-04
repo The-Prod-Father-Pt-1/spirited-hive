@@ -56,14 +56,16 @@
           }
         },
         "a55b9011-1b1a-4353-9d97-7bdcd60949f2": {
-          "type": "product-description",
+          "type": "collapsible-tab",
           "settings": {
             "collapsible_tab": true,
             "icon": "none",
             "heading": "About {{ product.title }}",
             "open_close_icon": "plus_minus",
             "open_by_default": true,
-            "margin_bottom": 0
+            "margin_bottom": 0,
+            "text": "<p><strong>Spiked. Your. Holiday.</strong></p><p>Our signature vodka cranberry cocktail sweetened with 100% organic wildflower honey</p>",
+            "page": ""
           }
         },
         "f0f0e917-92a5-4957-a68e-2d0bb38d7819": {
